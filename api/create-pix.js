@@ -49,7 +49,7 @@ module.exports = async function handler(req, res) {
       },
       item: item && item.title
         ? { title: item.title, price: item.price ?? amount, quantity: item.quantity ?? 1 }
-        : { title: 'Doação - Pietro, insumos e tratamento (Instituto Hub Social)', price: amount, quantity: 1 },
+        : { title: 'Doação - Pietro, insumos e tratamento (Fazer o Bem)', price: amount, quantity: 1 },
       paymentMethod: 'PIX',
       utm: typeof utm === 'string' ? utm : '',
     };
